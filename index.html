@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List with Reminders</title>
+  <style>
+    .completed { text-decoration: line-through; }
+    .overdue { color: rgb(255, 0, 0); }
+  </style>
+</head>
+<body>
+  <h1>To-do List</h1>
+  <form id="todo-form">
+    <input type="text" id="new-task" placeholder="Enter new task">
+    <button type="submit">Add Task</button>
+  </form>
+
+  <ul id="todo-list"></ul>
+
+  <div>
+    <label for="reminder">Set Reminder (seconds): </label>
+    <input type="number" id="reminder-time" placeholder="Seconds">
+    <button id="set-reminder">Set Reminder</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
